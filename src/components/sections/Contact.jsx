@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <Section id="contact" bg="bg-secondary" className="border-b border-gray-200">
+    <Section id="contact" bg="bg-transparent" className="border-b border-gray-200">
       <div className="text-center max-w-2xl mx-auto mb-16">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

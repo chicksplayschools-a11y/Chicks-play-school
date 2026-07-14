@@ -4,11 +4,48 @@
 
 @layer base {
   body {
-    @apply bg-white overflow-x-hidden;
+    @apply bg-background text-text overflow-x-hidden;
+    font-size: 16px;
+    line-height: 1.8;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading text-text;
+  }
+
+  p {
+    @apply text-xl leading-relaxed;
+  }
+
+  /* Specific typography rules */
+  .hero-title {
+    @apply font-bold leading-[1.1] text-[3rem] md:text-[5rem];
+    background: linear-gradient(135deg, #9673A6 0%, #FF9A8A 50%, #FFB300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: 
+      drop-shadow(2px 2px 0px white) 
+      drop-shadow(-2px -2px 0px white) 
+      drop-shadow(2px -2px 0px white) 
+      drop-shadow(-2px 2px 0px white)
+      drop-shadow(0px 4px 6px rgba(0,0,0,0.15));
+  }
+
+  .section-title, section h2 {
+    @apply text-[2.5rem] md:text-[3.5rem] font-bold pb-2;
+    background: linear-gradient(135deg, #9673A6 0%, #FF9A8A 50%, #FFB300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: 
+      drop-shadow(2px 2px 0px white) 
+      drop-shadow(-2px -2px 0px white) 
+      drop-shadow(2px -2px 0px white) 
+      drop-shadow(-2px 2px 0px white)
+      drop-shadow(0px 4px 6px rgba(0,0,0,0.15));
   }
 }
 
@@ -20,5 +57,21 @@
   .hide-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+
+  .btn {
+    @apply rounded-full px-[28px] py-[14px] font-body font-bold transition-all duration-300;
+  }
+  
+  .btn:hover {
+    @apply -translate-y-1 shadow-[0_12px_40px_rgba(255,179,0,0.25)];
+  }
+
+  .card-base {
+    @apply bg-white border border-[#9673A6]/15 rounded-[28px] shadow-card transition-all duration-[400ms];
+  }
+
+  .card-base:hover {
+    @apply -translate-y-[10px] shadow-2xl;
   }
 }

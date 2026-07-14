@@ -12,23 +12,64 @@ import CTA from './components/sections/CTA';
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 import FloatingWhatsApp from './components/ui/FloatingWhatsApp';
+import WaveDivider from './components/ui/WaveDivider';
+import PlayfulBackground from './components/ui/PlayfulBackground';
 
 function App() {
   return (
-    <div className="font-body text-text relative min-h-screen flex flex-col pt-20">
+    <div className="font-body text-text relative min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow flex flex-col w-full">
-        <Hero />
-        <TrustBar />
-        <About />
-        <Programs />
-        <Facilities />
-        <Gallery />
-        <Testimonials />
-        <WhyChooseUs />
-        <CTA />
-        <Contact />
+        <PlayfulBackground />
+        {/* HERO: Peach */}
+        <div className="bg-[#FFC3B9]">
+          <Hero />
+        </div>
+        <WaveDivider topColor="#FFC3B9" bottomColor="#FFD266" />
+
+        {/* TRUSTBAR + ABOUT: Yellow */}
+        <div className="bg-[#FFD266]">
+          <TrustBar />
+          <About />
+        </div>
+        <WaveDivider topColor="#FFD266" bottomColor="#C0ABCA" />
+
+        {/* PROGRAMS: Lavender */}
+        <div className="bg-[#C0ABCA]">
+          <Programs />
+        </div>
+        <WaveDivider topColor="#C0ABCA" bottomColor="#FFC3B9" />
+
+        {/* FACILITIES: Peach */}
+        <div className="bg-[#FFC3B9]">
+          <Facilities />
+        </div>
+        <WaveDivider topColor="#FFC3B9" bottomColor="#FFD266" />
+
+        {/* GALLERY: Yellow */}
+        <div className="bg-[#FFD266]">
+          <Gallery />
+        </div>
+        <WaveDivider topColor="#FFD266" bottomColor="#C0ABCA" />
+
+        {/* TESTIMONIALS: Lavender */}
+        <div className="bg-[#C0ABCA]">
+          <Testimonials />
+        </div>
+        <WaveDivider topColor="#C0ABCA" bottomColor="#FFC3B9" />
+
+        {/* WHY CHOOSE US: Peach */}
+        <div className="bg-[#FFC3B9]">
+          <WhyChooseUs />
+        </div>
+        <WaveDivider topColor="#FFC3B9" bottomColor="#FFD266" />
+
+        {/* CTA + CONTACT: Yellow */}
+        <div className="bg-[#FFD266]">
+          <CTA />
+          <Contact />
+        </div>
       </main>
 
       <Footer />

@@ -9,11 +9,11 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="w-full bg-primary/10 py-8 relative z-20">
+    <section className="w-full bg-transparent py-8 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center divide-x-0 lg:divide-x-2 divide-gray-200">
           {items.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

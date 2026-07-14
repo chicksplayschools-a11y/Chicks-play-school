@@ -25,13 +25,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-soft py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/40 backdrop-blur-lg shadow-sm border-b border-white/50 ${scrolled ? 'py-1.5' : 'py-3'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Chicks Play School Logo" className="h-10 sm:h-12 w-auto object-contain drop-shadow-sm" />
-            <span className="font-heading font-bold text-2xl text-accent hidden sm:block">
+          <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="/logo.png" alt="Chicks Play School Logo" className="h-8 sm:h-10 w-auto object-contain drop-shadow-sm" />
+            <span className="font-heading font-bold text-xl sm:text-2xl text-accent hidden sm:block">
               Chicks Play School
             </span>
           </div>
@@ -43,9 +43,10 @@ export default function Navbar() {
                 <a 
                   key={link.name} 
                   href={link.href}
-                  className="text-text hover:text-accent font-medium transition-colors"
+                  className="relative text-text hover:text-primary font-medium transition-colors group py-1"
                 >
                   {link.name}
+                  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                 </a>
               ))}
             </div>

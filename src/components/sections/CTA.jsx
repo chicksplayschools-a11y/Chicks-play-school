@@ -3,7 +3,7 @@ import Button from '../ui/Button';
 
 export default function CTA() {
   return (
-    <section className="py-24 bg-primary relative overflow-hidden z-20">
+    <section className="py-24 bg-transparent relative overflow-hidden z-20">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
       <motion.div animate={{ rotate: 360 }} transition={{ duration: 100, repeat: Infinity, ease: "linear" }} className="absolute -top-[50%] -right-[10%] w-[800px] h-[800px] border-[40px] border-white/10 rounded-full"></motion.div>
@@ -17,7 +17,7 @@ export default function CTA() {
           className="text-5xl sm:text-6xl md:text-7xl font-bold font-heading text-text mb-6 drop-shadow-sm"
         >
           Give Your Child <br className="hidden sm:block"/>
-          the <span className="text-white drop-shadow-md">Best Start</span>
+          the <span className="drop-shadow-md">Best Start</span>
         </motion.h2>
         
         <motion.p 
