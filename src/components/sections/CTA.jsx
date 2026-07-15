@@ -40,7 +40,7 @@ export default function CTA() {
           <Button size="lg" className="w-full sm:w-auto bg-text text-white hover:bg-text/90 shadow-float text-xl px-10 py-5" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
             Book a Visit
           </Button>
-          <Button size="lg" className="w-full sm:w-auto bg-white text-text hover:bg-gray-50 shadow-float text-xl px-10 py-5 flex items-center justify-center gap-2" onClick={() => window.location.href='tel:+911234567890'}>
+          <Button size="lg" className="w-full sm:w-auto bg-white text-text hover:bg-gray-50 shadow-float text-xl px-10 py-5 flex items-center justify-center gap-2" onClick={() => window.location.href='tel:+918639851140'}>
             <span>📞</span> Call Now
           </Button>
         </motion.div>

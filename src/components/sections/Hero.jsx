@@ -60,7 +60,7 @@ export default function Hero() {
                 →
               </motion.span>
             </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-xl px-10 py-4 flex items-center justify-center gap-2 bg-white/90 backdrop-blur-sm border-transparent" onClick={() => window.location.href = 'tel:+911234567890'}>
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-xl px-10 py-4 flex items-center justify-center gap-2 bg-white/90 backdrop-blur-sm border-transparent" onClick={() => window.location.href = 'tel:+918639851140'}>
               <span className="text-2xl">✨</span> Let's Chat!
             </Button>
           </div>

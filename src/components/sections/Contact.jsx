@@ -73,6 +73,9 @@ export default function Contact() {
               <a href="tel:08639851140" className="text-gray-600 hover:text-accent transition-colors block text-lg font-medium">
                 08639851140
               </a>
+              <a href="tel:09293558901" className="text-gray-600 hover:text-accent transition-colors block text-lg font-medium">
+                09293558901
+              </a>
             </div>
           </motion.div>
 

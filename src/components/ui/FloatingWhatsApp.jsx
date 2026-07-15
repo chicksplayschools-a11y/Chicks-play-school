@@ -35,10 +35,10 @@ export default function FloatingWhatsApp() {
         </motion.a>
       </div>
 
-      <div className="fixed bottom-6 right-6 z-[100] flex flex-col items-center">
+      <div className="fixed bottom-6 right-6 z-[100] flex flex-col items-center gap-4">
         {/* WhatsApp Floating Button */}
         <motion.a
-          href="https://wa.me/911234567890"
+          href="https://wa.me/918639851140"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0, opacity: 0 }}

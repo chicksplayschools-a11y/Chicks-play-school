@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 cursor-pointer">
             <img src="/logo.png" alt="Chicks Play School Logo" className="h-8 sm:h-10 w-auto object-contain drop-shadow-sm" />
-            <span className="font-heading font-bold text-xl sm:text-2xl text-accent hidden sm:block">
+            <span className="font-heading font-bold text-xl sm:text-2xl text-primary hidden sm:block">
               Chicks Play School
             </span>
           </div>
