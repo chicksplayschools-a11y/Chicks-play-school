@@ -22,8 +22,30 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-transparent overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+    <section className="py-20 bg-transparent !overflow-visible relative">
+      {/* Background Decor Mascots */}
+      <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block">
+        <motion.img
+          src="/chick-testimonials-left.png"
+          alt="Testimonials Left Mascot"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[250px] -left-10 w-[600px] h-[600px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 6s ease-in-out infinite' }}
+        />
+        <motion.img
+          src="/chick-testimonials-right.png"
+          alt="Testimonials Right Mascot"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[250px] -right-10 w-[600px] h-[600px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center relative z-10">
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

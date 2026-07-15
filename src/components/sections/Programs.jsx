@@ -67,8 +67,35 @@ const programs = [
 
 export default function Programs() {
   return (
-    <Section id="programs" bg="bg-transparent">
-      <div className="text-center max-w-3xl mx-auto mb-16">
+    <Section id="programs" bg="bg-transparent" className="!overflow-visible">
+      {/* Flanking Mascots */}
+      <div className="absolute inset-0 pointer-events-none z-40">
+        {/* Left Mascot */}
+        <motion.img
+          src="/chick-programs-left.png"
+          alt="Left Programs Mascot"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+          className="absolute -top-[200px] lg:-top-[300px] -left-10 lg:-left-16 w-56 h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl opacity-60 lg:opacity-100"
+          style={{ animation: 'float 6s ease-in-out infinite' }}
+        />
+        {/* Right Mascot */}
+        <motion.img
+          src="/chick-programs-right.png"
+          alt="Right Programs Mascot"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+          className="absolute -top-[160px] lg:-top-[260px] -right-10 lg:-right-16 w-56 h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl opacity-60 lg:opacity-100"
+          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+        />
+      </div>
+
+      <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

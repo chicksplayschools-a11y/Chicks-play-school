@@ -12,8 +12,31 @@ const images = [
 
 export default function Gallery() {
   return (
-    <Section id="gallery" bg="bg-transparent">
-      <div className="text-center max-w-2xl mx-auto mb-16">
+    <Section id="gallery" bg="bg-transparent" className="!overflow-visible">
+      {/* Background Decor Mascots */}
+      <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block">
+        <motion.img
+          src="/chick-gallery-left.png"
+          alt="Gallery Left Mascot"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[300px] -left-10 w-[450px] h-[450px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 6s ease-in-out infinite' }}
+        />
+        <motion.img
+          src="/chick-gallery-right.png"
+          alt="Gallery Right Mascot"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[380px] -right-[160px] w-[650px] h-[650px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+        />
+      </div>
+      <div className="text-center max-w-2xl mx-auto mb-16 relative">
+
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

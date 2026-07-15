@@ -33,10 +33,23 @@ export default function About() {
 
           {/* Decorative Blob */}
           <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-2xl z-0"></div>
+
         </div>
 
         {/* Text Content */}
-        <div className="order-1 lg:order-2 space-y-6">
+        <div className="order-1 lg:order-2 space-y-6 relative">
+          {/* Chick Mascot (Moved to the right side) */}
+          <motion.img
+            src="/chick-about.png"
+            alt="About Chick Mascot"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+            className="absolute -top-16 md:-top-32 lg:-top-48 right-0 md:-right-10 lg:-right-20 w-48 h-48 md:w-72 md:h-72 lg:w-[400px] lg:h-[400px] object-contain z-0 drop-shadow-2xl opacity-40 lg:opacity-100 pointer-events-none"
+            style={{ animation: 'float 5s ease-in-out infinite' }}
+          />
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

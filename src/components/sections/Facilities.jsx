@@ -11,11 +11,35 @@ const facilities = [
 
 export default function Facilities() {
   return (
-    <Section id="facilities" bg="bg-transparent" className="overflow-hidden">
-      <div className="flex flex-col lg:flex-row gap-12 items-center">
+    <Section id="facilities" bg="bg-transparent" className="!overflow-visible">
+      {/* Background Decor Mascots */}
+      <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block">
+        <motion.img
+          src="/chick-facilities-left.png"
+          alt="Facilities Left Mascot"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[380px] -left-10 w-[450px] h-[450px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 6s ease-in-out infinite' }}
+        />
+        <motion.img
+          src="/chick-facilities-right.png"
+          alt="Facilities Right Mascot"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[360px] -right-[120px] w-[450px] h-[450px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+        />
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-12 items-center relative z-10">
 
         {/* Text Area */}
-        <div className="w-full lg:w-1/3 space-y-6">
+        <div className="w-full lg:w-1/3 space-y-6 relative">
+
+
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}

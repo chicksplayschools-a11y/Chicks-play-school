@@ -23,7 +23,7 @@ function App() {
       <main className="flex-grow flex flex-col w-full">
         <PlayfulBackground />
         {/* HERO: Peach */}
-        <div className="bg-[#FFC3B9]">
+        <div className="bg-[#FFC3B9] relative z-20">
           <Hero />
         </div>
         <WaveDivider topColor="#FFC3B9" bottomColor="#FFD266" />
@@ -36,31 +36,31 @@ function App() {
         <WaveDivider topColor="#FFD266" bottomColor="#C0ABCA" />
 
         {/* PROGRAMS: Lavender */}
-        <div className="bg-[#C0ABCA]">
+        <div className="bg-[#C0ABCA] relative z-20">
           <Programs />
         </div>
         <WaveDivider topColor="#C0ABCA" bottomColor="#FFC3B9" />
 
         {/* FACILITIES: Peach */}
-        <div className="bg-[#FFC3B9]">
+        <div className="bg-[#FFC3B9] relative z-30">
           <Facilities />
         </div>
         <WaveDivider topColor="#FFC3B9" bottomColor="#FFD266" />
 
         {/* GALLERY: Yellow */}
-        <div className="bg-[#FFD266]">
+        <div className="bg-[#FFD266] relative z-40">
           <Gallery />
         </div>
         <WaveDivider topColor="#FFD266" bottomColor="#C0ABCA" />
 
         {/* TESTIMONIALS: Lavender */}
-        <div className="bg-[#C0ABCA]">
+        <div className="bg-[#C0ABCA] relative z-50">
           <Testimonials />
         </div>
         <WaveDivider topColor="#C0ABCA" bottomColor="#FFC3B9" />
 
         {/* WHY CHOOSE US: Peach */}
-        <div className="bg-[#FFC3B9]">
+        <div className="bg-[#FFC3B9] relative z-[60]">
           <WhyChooseUs />
         </div>
         <WaveDivider topColor="#FFC3B9" bottomColor="#FFD266" />

@@ -3,20 +3,34 @@ import Button from '../ui/Button';
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-      {/* Background Video (GIF) */}
-      <video
-        src="/hero-video.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      />
-      {/* Dark overlay to make the playful text pop professionally */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+    <section className="relative w-full min-h-[90vh] flex items-center justify-center pt-32 pb-20">
+      {/* Background Video and Overlay Wrapper */}
+      <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
+        <video
+          src="/hero-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Dark overlay to make the playful text pop professionally */}
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      {/* Chick Mascot positioned relative to the full screen */}
+      <div className="absolute -right-10 md:-right-10 lg:right-0 -bottom-10 md:-bottom-20 lg:-bottom-24 hidden md:block z-30 pointer-events-none">
+        <motion.img
+          src="/chick-hero.png"
+          alt="Hero Chick Mascot"
+          animate={{ y: [0, -20, 0] }}
+          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          className="w-48 h-48 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl"
+        />
+      </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
+
         {/* Centered Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}

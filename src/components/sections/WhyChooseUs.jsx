@@ -11,12 +11,33 @@ const points = [
 
 export default function WhyChooseUs() {
   return (
-    <Section id="why-choose-us" bg="bg-transparent">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
+    <Section id="why-choose-us" bg="bg-transparent" className="!overflow-visible relative">
+      {/* Background Decor Mascots */}
+      <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block">
+        <motion.img
+          src="/chick-whyus-left.png"
+          alt="Why Choose Us Left Mascot"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[520px] -left-[120px] w-[600px] h-[600px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 6s ease-in-out infinite' }}
+        />
+        <motion.img
+          src="/chick-whyus-right.png"
+          alt="Why Choose Us Right Mascot"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="absolute -top-[480px] -right-[110px] w-[600px] h-[600px] object-contain drop-shadow-xl"
+          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+        />
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+
         {/* Text Area */}
         <div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -24,7 +45,7 @@ export default function WhyChooseUs() {
           >
             💡 Why Choose Us
           </motion.div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -36,7 +57,7 @@ export default function WhyChooseUs() {
 
           <div className="space-y-6">
             {points.map((pt, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +77,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Image Area */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -64,20 +85,20 @@ export default function WhyChooseUs() {
           className="relative"
         >
           <div className="rounded-[3rem] overflow-hidden bg-primary shadow-float aspect-square flex items-center justify-center border-8 border-white p-8">
-             <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent"></div>
-             
-             {/* Abstract arrangement of learning blobs */}
-             <div className="relative w-full h-full flex items-center justify-center">
-                <motion.div animate={{ rotate: 360 }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }} className="absolute w-[120%] h-[120%] border-4 border-dashed border-white/30 rounded-full"></motion.div>
-                
-                <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 4, repeat: Infinity }} className="absolute top-10 left-10 text-7xl drop-shadow-lg">🖍️</motion.div>
-                <motion.div animate={{ y: [0, 20, 0] }} transition={{ duration: 5, repeat: Infinity }} className="absolute bottom-10 right-10 text-8xl drop-shadow-lg">🧸</motion.div>
-                <motion.div animate={{ y: [0, -15, 0] }} transition={{ duration: 4.5, repeat: Infinity }} className="absolute top-1/2 right-4 text-6xl drop-shadow-lg">🧩</motion.div>
-                
-                <div className="w-48 h-48 bg-white rounded-full flex items-center justify-center shadow-float z-10 border-4 border-primary overflow-hidden">
-                  <img src="/chick.jpg" alt="Chick" className="w-full h-full object-cover" />
-                </div>
-             </div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent"></div>
+
+            {/* Abstract arrangement of learning blobs */}
+            <div className="relative w-full h-full flex items-center justify-center">
+              <motion.div animate={{ rotate: 360 }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }} className="absolute w-[120%] h-[120%] border-4 border-dashed border-white/30 rounded-full"></motion.div>
+
+              <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 4, repeat: Infinity }} className="absolute top-10 left-10 text-7xl drop-shadow-lg">🖍️</motion.div>
+              <motion.div animate={{ y: [0, 20, 0] }} transition={{ duration: 5, repeat: Infinity }} className="absolute bottom-10 right-10 text-8xl drop-shadow-lg">🧸</motion.div>
+              <motion.div animate={{ y: [0, -15, 0] }} transition={{ duration: 4.5, repeat: Infinity }} className="absolute top-1/2 right-4 text-6xl drop-shadow-lg">🧩</motion.div>
+
+              <div className="w-48 h-48 bg-white rounded-full flex items-center justify-center shadow-float z-10 border-4 border-primary overflow-hidden">
+                <img src="/chick.jpg" alt="Chick" className="w-full h-full object-cover" />
+              </div>
+            </div>
           </div>
         </motion.div>
 
