@@ -79,7 +79,7 @@ export default function Programs() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
           className="absolute -top-[200px] lg:-top-[300px] -left-10 lg:-left-16 w-56 h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl opacity-60 lg:opacity-100"
-          style={{ animation: 'float 6s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         {/* Right Mascot */}
         <motion.img
@@ -90,7 +90,7 @@ export default function Programs() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
           className="absolute -top-[160px] lg:-top-[260px] -right-10 lg:-right-16 w-56 h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl opacity-60 lg:opacity-100"
-          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
 

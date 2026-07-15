@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -20,14 +20,11 @@ export default function Footer() {
               Chicks Play School is a trusted preschool in Old Alwal focused on nurturing young minds through play-based learning in a safe and caring environment.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent hover:bg-white hover:scale-105 transition-all">
+              <a href="https://www.facebook.com/crayonsplayschool.oldalwal/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent hover:bg-white hover:scale-105 transition-all" aria-label="Visit our Facebook">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent hover:bg-white hover:scale-105 transition-all">
-                <Instagram size={24} />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent hover:bg-white hover:scale-105 transition-all">
-                <Twitter size={24} />
+              <a href="https://youtube.com/@chicksplayschoololdalwal?si=5T9OyA0-gFzCNyKM" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent hover:bg-white hover:scale-105 transition-all" aria-label="Visit our YouTube">
+                <Youtube size={24} />
               </a>
             </div>
           </div>

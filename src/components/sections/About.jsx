@@ -47,7 +47,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
             className="absolute -top-16 md:-top-32 lg:-top-48 right-0 md:-right-10 lg:-right-20 w-48 h-48 md:w-72 md:h-72 lg:w-[400px] lg:h-[400px] object-contain z-0 drop-shadow-2xl opacity-40 lg:opacity-100 pointer-events-none"
-            style={{ animation: 'float 5s ease-in-out infinite' }}
+            style={{ animation: 'float 2s ease-in-out infinite' }}
           />
 
           <motion.div
@@ -94,9 +94,18 @@ export default function About() {
             transition={{ delay: 0.3 }}
             className="pt-4"
           >
-            <Button variant="primary" size="lg" className="shadow-float">
-              Read More About Us
-            </Button>
+            <motion.a
+              href="https://youtu.be/FfdZ8vbcM7M?si=V-_xGUXHKXuaAaPC"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center justify-center gap-3 font-body font-bold rounded-full px-[28px] py-[14px] transition-all duration-300 outline-none bg-accent text-text shadow-soft hover:shadow-[0_12px_40px_rgba(255,179,0,0.25)] hover:-translate-y-1 hover:scale-105 hover:bg-[#E6A100] text-xl leading-none"
+            >
+              <svg viewBox="0 0 24 24" fill="#FF0000" className="w-7 h-7">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              Watch Now: Academic Year 2025-2026
+            </motion.a>
           </motion.div>
         </div>
       </div>

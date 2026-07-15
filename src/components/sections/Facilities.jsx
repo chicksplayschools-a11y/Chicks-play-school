@@ -21,7 +21,7 @@ export default function Facilities() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[380px] -left-10 w-[450px] h-[450px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 6s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
           src="/chick-facilities-right.png"
@@ -30,7 +30,7 @@ export default function Facilities() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[360px] -right-[120px] w-[450px] h-[450px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
 

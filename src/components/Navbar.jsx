@@ -25,7 +25,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/40 backdrop-blur-lg shadow-sm border-b border-white/50 ${scrolled ? 'py-1.5' : 'py-3'}`}>
+    <nav className={`fixed top-0 inset-x-0 z-[100] transition-all duration-300 bg-white/40 backdrop-blur-lg shadow-sm border-b border-white/50 ${scrolled ? 'py-1.5' : 'py-3'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}

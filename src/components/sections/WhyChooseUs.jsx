@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import Section from '../Section';
 
 const points = [
-  { icon: '❤️', title: 'Caring & Friendly Teachers' },
-  { icon: '🧠', title: 'Focus on Overall Development' },
-  { icon: '🎨', title: 'Fun & Interactive Learning' },
-  { icon: '👶', title: 'Individual Attention to Every Child' },
-  { icon: '🏡', title: 'Safe & Comfortable Environment' },
+  { icon: '❤️', title: 'Play-based Learning' },
+  { icon: '🧠', title: 'Innovative Skills' },
+  { icon: '🎨', title: 'Every week Activity' },
+  { icon: '👶', title: 'Performance Hall' },
+  { icon: '🏡', title: 'Safe and Secure play area' },
 ];
 
 export default function WhyChooseUs() {
@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[520px] -left-[120px] w-[600px] h-[600px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 6s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
           src="/chick-whyus-right.png"
@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[480px] -right-[110px] w-[600px] h-[600px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">

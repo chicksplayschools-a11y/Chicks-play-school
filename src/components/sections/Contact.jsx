@@ -14,7 +14,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[400px] -left-[130px] w-[600px] h-[600px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 6s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
           src="/chick-contact-right.png"
@@ -23,7 +23,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[400px] -right-[130px] w-[600px] h-[600px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
       <div className="text-center max-w-2xl mx-auto mb-16 relative z-10">
@@ -71,7 +71,7 @@ export default function Contact() {
             <div>
               <h4 className="font-bold text-lg text-text mb-1">Phone</h4>
               <a href="tel:08639851140" className="text-gray-600 hover:text-accent transition-colors block text-lg font-medium">
-                086398 51140
+                08639851140
               </a>
             </div>
           </motion.div>

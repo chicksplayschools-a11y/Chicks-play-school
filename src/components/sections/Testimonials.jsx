@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import Button from '../ui/Button';
 
 const reviews = [
@@ -21,6 +22,8 @@ const reviews = [
 ];
 
 export default function Testimonials() {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
   return (
     <section className="py-20 bg-transparent !overflow-visible relative">
       {/* Background Decor Mascots */}
@@ -32,7 +35,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[250px] -left-10 w-[600px] h-[600px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 6s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
           src="/chick-testimonials-right.png"
@@ -41,7 +44,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="absolute -top-[250px] -right-10 w-[600px] h-[600px] object-contain drop-shadow-xl"
-          style={{ animation: 'float 5.5s ease-in-out infinite' }}
+          style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center relative z-10">
@@ -85,6 +88,44 @@ export default function Testimonials() {
               115+ 5-Star Google Reviews
             </span>
           </div>
+        </motion.div>
+
+        {/* Video Testimonial */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-12 max-w-3xl mx-auto rounded-[2rem] overflow-hidden shadow-float border-8 border-white bg-white relative aspect-video z-20 group"
+        >
+          {!isVideoPlaying ? (
+            <div 
+              className="absolute inset-0 cursor-pointer flex items-center justify-center bg-gray-900"
+              onClick={() => setIsVideoPlaying(true)}
+            >
+              <img 
+                src="https://img.youtube.com/vi/MRBzJAN6V9s/maxresdefault.jpg" 
+                alt="Video Thumbnail" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                onError={(e) => { e.target.src = "https://img.youtube.com/vi/MRBzJAN6V9s/hqdefault.jpg"; }}
+              />
+              <div className="absolute w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-110 transition-transform duration-300 border-4 border-white">
+                <svg viewBox="0 0 24 24" fill="white" className="w-10 h-10 ml-1"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          ) : (
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/MRBzJAN6V9s?rel=0&autoplay=1" 
+              title="Parents Feedback" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+              className="absolute inset-0 w-full h-full rounded-2xl"
+            ></iframe>
+          )}
         </motion.div>
       </div>
 
