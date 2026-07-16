@@ -14,14 +14,14 @@ export default function Gallery() {
   return (
     <Section id="gallery" bg="bg-transparent" className="!overflow-visible">
       {/* Background Decor Mascots */}
-      <div className="absolute inset-0 pointer-events-none z-0 opacity-40 lg:opacity-100">
+      <div className="absolute inset-0 pointer-events-none z-0 opacity-100">
         <motion.img
           src="/chick-gallery-left.png"
           alt="Gallery Left Mascot"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute top-10 -left-4 w-24 h-24 md:-top-[150px] md:-left-10 md:w-64 md:h-64 lg:-top-[300px] lg:-left-10 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-xl"
+          className="absolute top-4 left-0 w-24 h-24 sm:top-10 sm:-left-4 md:-top-[150px] md:-left-10 md:w-64 md:h-64 lg:-top-[300px] lg:-left-10 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-xl block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
@@ -30,7 +30,7 @@ export default function Gallery() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute top-40 -right-4 w-24 h-24 md:-top-[200px] md:-right-[80px] md:w-64 md:h-64 lg:-top-[380px] lg:-right-[160px] lg:w-[650px] lg:h-[650px] object-contain drop-shadow-xl"
+          className="absolute sm:top-40 sm:-right-4 w-24 h-24 md:-top-[200px] md:-right-[80px] md:w-64 md:h-64 lg:-top-[380px] lg:-right-[160px] lg:w-[650px] lg:h-[650px] object-contain drop-shadow-xl hidden md:block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>

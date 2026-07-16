@@ -69,7 +69,7 @@ export default function Programs() {
   return (
     <Section id="programs" bg="bg-transparent" className="!overflow-visible">
       {/* Flanking Mascots */}
-      <div className="absolute inset-0 pointer-events-none z-40 opacity-40 lg:opacity-100">
+      <div className="absolute inset-0 pointer-events-none z-40 opacity-100">
         {/* Left Mascot */}
         <motion.img
           src="/chick-programs-left.png"
@@ -78,7 +78,7 @@ export default function Programs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
-          className="absolute top-10 -left-4 w-24 h-24 md:-top-[200px] md:-left-10 md:w-80 md:h-80 lg:-top-[300px] lg:-left-16 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl"
+          className="absolute top-4 left-0 w-24 h-24 sm:top-10 sm:-left-4 md:-top-[200px] md:-left-10 md:w-80 md:h-80 lg:-top-[300px] lg:-left-16 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         {/* Right Mascot */}
@@ -89,7 +89,7 @@ export default function Programs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
-          className="absolute top-40 -right-4 w-24 h-24 md:-top-[160px] md:-right-10 md:w-80 md:h-80 lg:-top-[260px] lg:-right-16 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl"
+          className="absolute sm:top-40 sm:-right-4 w-24 h-24 md:-top-[160px] md:-right-10 md:w-80 md:h-80 lg:-top-[260px] lg:-right-16 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl hidden md:block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
