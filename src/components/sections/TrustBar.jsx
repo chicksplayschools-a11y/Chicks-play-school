@@ -5,7 +5,7 @@ export default function TrustBar() {
     { icon: '⭐', text: 'Rated by Happy Parents', highlight: false },
     { icon: '👶', text: 'Nurturing Young Minds', highlight: false },
     { icon: '🏫', text: 'Safe & Friendly Environment', highlight: false },
-    { icon: '🎨', text: 'Activity-Based Learning', highlight: true },
+    { icon: '🎨', text: 'Activity-Based Learning', highlight: false },
   ];
 
   return (
