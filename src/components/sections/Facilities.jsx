@@ -13,14 +13,14 @@ export default function Facilities() {
   return (
     <Section id="facilities" bg="bg-transparent" className="!overflow-visible">
       {/* Background Decor Mascots */}
-      <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block">
+      <div className="absolute inset-0 pointer-events-none z-0 opacity-40 lg:opacity-100">
         <motion.img
           src="/chick-facilities-left.png"
           alt="Facilities Left Mascot"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute -top-[380px] -left-10 w-[450px] h-[450px] object-contain drop-shadow-xl"
+          className="absolute top-0 -left-4 w-24 h-24 md:-top-[200px] md:w-64 md:h-64 lg:-top-[380px] lg:-left-10 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-xl"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
@@ -29,7 +29,7 @@ export default function Facilities() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute -top-[360px] -right-[120px] w-[450px] h-[450px] object-contain drop-shadow-xl"
+          className="absolute top-40 -right-4 w-24 h-24 md:-top-[180px] md:-right-[60px] md:w-64 md:h-64 lg:-top-[360px] lg:-right-[120px] lg:w-[450px] lg:h-[450px] object-contain drop-shadow-xl"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>

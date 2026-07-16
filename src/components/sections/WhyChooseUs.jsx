@@ -13,14 +13,14 @@ export default function WhyChooseUs() {
   return (
     <Section id="why-choose-us" bg="bg-transparent" className="!overflow-visible relative">
       {/* Background Decor Mascots */}
-      <div className="absolute inset-0 pointer-events-none z-0 hidden lg:block">
+      <div className="absolute inset-0 pointer-events-none z-0 opacity-40 lg:opacity-100">
         <motion.img
           src="/chick-whyus-left.png"
           alt="Why Choose Us Left Mascot"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute -top-[520px] -left-[120px] w-[600px] h-[600px] object-contain drop-shadow-xl"
+          className="absolute top-10 -left-4 w-24 h-24 md:-top-[200px] md:-left-10 md:w-64 md:h-64 lg:-top-[520px] lg:-left-[120px] lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute -top-[480px] -right-[110px] w-[600px] h-[600px] object-contain drop-shadow-xl"
+          className="absolute top-40 -right-4 w-24 h-24 md:-top-[200px] md:-right-10 md:w-64 md:h-64 lg:-top-[480px] lg:-right-[110px] lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>
