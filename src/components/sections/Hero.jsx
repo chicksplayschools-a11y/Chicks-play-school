@@ -38,21 +38,21 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center space-y-8 flex flex-col items-center"
         >
-          <div className="inline-block px-5 py-2 bg-white/90 backdrop-blur-sm rounded-full text-sm font-semibold text-accent shadow-soft mb-2 border border-white">
+          <div className="inline-block px-3 py-1.5 sm:px-5 sm:py-2 bg-white/90 backdrop-blur-sm rounded-full text-xs sm:text-sm font-semibold text-accent shadow-soft mb-2 border border-white whitespace-normal text-center max-w-[95vw]">
             Recognized by the Government of Telangana ✨
           </div>
 
           <h1 className="hero-title">
-            Learning begins <br />
+            Learning begins <br className="hidden sm:block" />
             with play!
           </h1>
 
-          <p className="text-xl sm:text-2xl text-white font-medium max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-lg sm:text-2xl text-white font-medium max-w-3xl mx-auto drop-shadow-md px-2 sm:px-0">
             Step into a magical world of giggles, games, and growth! We make learning a joyful adventure for your little ones.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 w-full sm:w-auto">
-            <Button size="lg" className="w-full sm:w-auto shadow-float text-xl px-10 py-4 group" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button size="lg" className="w-full sm:w-auto shadow-float text-lg px-6 py-3 sm:text-xl sm:px-10 sm:py-4 group" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Start the Adventure
               <motion.span
                 className="ml-2 inline-block group-hover:translate-x-1 transition-transform"
@@ -60,8 +60,8 @@ export default function Hero() {
                 →
               </motion.span>
             </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-xl px-10 py-4 flex items-center justify-center gap-2 bg-white/90 backdrop-blur-sm border-transparent" onClick={() => window.location.href = 'tel:+918639851140'}>
-              <span className="text-2xl">✨</span> Let's Chat!
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-lg px-6 py-3 sm:text-xl sm:px-10 sm:py-4 flex items-center justify-center gap-2 bg-white/90 backdrop-blur-sm border-transparent" onClick={() => window.location.href = 'tel:+918639851140'}>
+              <span className="text-xl sm:text-2xl">✨</span> Let's Chat!
             </Button>
           </div>
         </motion.div>

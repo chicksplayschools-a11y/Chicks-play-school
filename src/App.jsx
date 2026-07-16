@@ -17,7 +17,7 @@ import PlayfulBackground from './components/ui/PlayfulBackground';
 
 function App() {
   return (
-    <div className="font-body text-text relative min-h-screen flex flex-col">
+    <div className="font-body text-text relative min-h-screen flex flex-col overflow-x-hidden w-full max-w-[100vw]">
       <Navbar />
 
       <main className="flex-grow flex flex-col w-full">

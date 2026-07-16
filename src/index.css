@@ -19,7 +19,7 @@
 
   /* Specific typography rules */
   .hero-title {
-    @apply font-bold leading-[1.1] text-[3rem] md:text-[5rem];
+    @apply font-bold leading-[1.1] text-[2.2rem] sm:text-[3rem] md:text-[5rem];
     background: linear-gradient(135deg, #9673A6 0%, #FF9A8A 50%, #FFB300 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 cursor-pointer">
             <img src="/logo.png" alt="Chicks Play School Logo" className="h-8 sm:h-10 w-auto object-contain drop-shadow-sm" />
-            <span className="font-heading font-bold text-xl sm:text-2xl text-primary hidden sm:block">
+            <span className="font-heading font-bold text-[1.1rem] sm:text-2xl text-primary whitespace-nowrap">
               Chicks Play School
             </span>
           </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg bg-secondary text-accent hover:bg-primary/20 transition-colors"
+              className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
