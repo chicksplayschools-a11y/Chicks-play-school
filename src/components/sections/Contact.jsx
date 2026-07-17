@@ -22,7 +22,7 @@ export default function Contact() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute top-4 right-0 w-24 h-24 sm:top-40 sm:-right-4 md:-top-[200px] md:-right-10 md:w-64 md:h-64 lg:-top-[400px] lg:-right-[130px] lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl block"
+          className="absolute left-[25%] -translate-x-1/2 -top-[170px] w-56 h-56 md:left-auto md:translate-x-0 sm:top-40 sm:-right-4 md:-top-[200px] md:-right-10 md:w-64 md:h-64 lg:-top-[400px] lg:-right-[130px] lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>

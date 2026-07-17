@@ -34,7 +34,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute sm:top-10 sm:-left-4 w-24 h-24 md:-top-[150px] md:-left-10 md:w-64 md:h-64 lg:-top-[250px] lg:-left-10 lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl hidden md:block"
+          className="absolute left-[30%] -translate-x-1/2 -top-[120px] w-56 h-56 md:left-auto md:translate-x-0 sm:top-10 sm:-left-4 md:-top-[150px] md:-left-10 md:w-64 md:h-64 lg:-top-[250px] lg:-left-10 lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
@@ -43,7 +43,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute top-4 right-0 w-24 h-24 sm:top-40 sm:-right-4 md:-top-[150px] md:-right-10 md:w-64 md:h-64 lg:-top-[250px] lg:-right-10 lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl block"
+          className="absolute sm:top-40 sm:-right-4 w-24 h-24 md:-top-[150px] md:-right-10 md:w-64 md:h-64 lg:-top-[250px] lg:-right-10 lg:w-[600px] lg:h-[600px] object-contain drop-shadow-xl hidden md:block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
       </div>

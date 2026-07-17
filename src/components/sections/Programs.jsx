@@ -78,7 +78,7 @@ export default function Programs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
-          className="absolute top-4 left-0 w-24 h-24 sm:top-10 sm:-left-4 md:-top-[200px] md:-left-10 md:w-80 md:h-80 lg:-top-[300px] lg:-left-16 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl block"
+          className="absolute left-[35%] -translate-x-1/2 -top-[240px] w-56 h-56 md:left-auto md:translate-x-0 sm:top-10 sm:-left-4 md:-top-[200px] md:-left-10 md:w-80 md:h-80 lg:-top-[300px] lg:-left-16 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         {/* Right Mascot */}

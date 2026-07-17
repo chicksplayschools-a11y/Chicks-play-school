@@ -19,13 +19,13 @@ export default function Hero() {
       </div>
 
       {/* Chick Mascot positioned relative to the full screen */}
-      <div className="absolute -right-2 md:-right-10 lg:right-0 -bottom-4 md:-bottom-20 lg:-bottom-24 z-30 pointer-events-none opacity-40 sm:opacity-100">
+      <div className="absolute left-1/2 -translate-x-1/2 -bottom-28 md:left-auto md:translate-x-0 md:-right-10 lg:right-0 md:-bottom-20 lg:-bottom-24 z-30 pointer-events-none opacity-100">
         <motion.img
           src="/chick-hero.png"
           alt="Hero Chick Mascot"
           animate={{ y: [0, -20, 0] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-          className="w-24 h-24 sm:w-32 sm:h-32 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl"
+          className="w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-2xl"
         />
       </div>
 

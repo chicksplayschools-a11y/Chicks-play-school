@@ -21,7 +21,7 @@ export default function Gallery() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="absolute top-4 left-0 w-24 h-24 sm:top-10 sm:-left-4 md:-top-[150px] md:-left-10 md:w-64 md:h-64 lg:-top-[300px] lg:-left-10 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-xl block"
+          className="absolute left-[30%] -translate-x-1/2 -top-[220px] w-56 h-56 md:left-auto md:translate-x-0 sm:top-10 sm:-left-4 md:-top-[150px] md:-left-10 md:w-64 md:h-64 lg:-top-[300px] lg:-left-10 lg:w-[450px] lg:h-[450px] object-contain drop-shadow-xl block"
           style={{ animation: 'float 2.5s ease-in-out infinite' }}
         />
         <motion.img
