@@ -42,10 +42,13 @@ export default function Hero() {
             Recognized by the Government of Telangana ✨
           </div>
 
-          <h1 className="hero-title">
+          {/* SEO Optimized H1 (Visually Hidden) */}
+          <h1 className="sr-only">Chicks Play School - Best Preschool in Alwal</h1>
+
+          <h2 className="hero-title">
             Learning begins <br className="hidden sm:block" />
             with play!
-          </h1>
+          </h2>
 
           <p className="text-lg sm:text-2xl text-white font-medium max-w-3xl mx-auto drop-shadow-md px-2 sm:px-0">
             Step into a magical world of giggles, games, and growth! We make learning a joyful adventure for your little ones.
