@@ -82,7 +82,19 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    // Use a slight timeout to let the menu closing animation start, ensuring smooth scrolling
+                    setTimeout(() => {
+                      if (link.href === '#') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      } else {
+                        const targetId = link.href.replace('#', '');
+                        document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }, 50);
+                  }}
                   className="block px-3 py-3 text-lg font-medium text-text hover:text-accent hover:bg-secondary rounded-xl transition-colors"
                 >
                   {link.name}
