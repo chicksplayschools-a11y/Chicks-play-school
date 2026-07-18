@@ -167,8 +167,12 @@ export default function Testimonials() {
         </motion.div>
       </div>
 
-      <div className="mt-10 text-center">
-        <Button variant="secondary" className="shadow-sm">
+      <div className="mt-10 text-center relative z-10 pointer-events-auto">
+        <Button 
+          variant="secondary" 
+          className="shadow-sm cursor-pointer"
+          onClick={() => window.open('https://www.google.com/search?q=Chicks+Play+School+Old+Alwal#lrd=0x3bcb9a888c7d6a7d:0xcfd6dc37e283287,1', '_blank')}
+        >
           Read More Reviews on Google
         </Button>
       </div>
